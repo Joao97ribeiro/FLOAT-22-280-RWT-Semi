@@ -61,7 +61,7 @@ The figure below shows how the fatigue damage distribution decreases when moving
 </p>
 
 
-# What This Repository Provides
+## What This Repository Provides
 
 This repository includes for the **FLOAT-22-280-RWT-Semi**:
 - [OpenFAST](https://github.com/openfast) aeroelasic model inputs (OpenFAST version 3.5.2): see [OpenFAST](./OpenFAST).
