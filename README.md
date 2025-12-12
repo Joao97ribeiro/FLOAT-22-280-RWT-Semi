@@ -57,7 +57,7 @@ The redesigned tower introduces a new geometric profile driven by fatigue requir
 
 The figure below shows how the fatigue damage distribution decreases when moving from the original **IEA-22-280-RWT-Semi** tower to the fatigue-optimized **FLOAT-22-280-RWT-Semi** design:
 <p align="center">
-  <img src="./images/float_iea_22mw_damage.png" alt="FLOAT vs IEA: damage" width="350">
+  <img src="./images/float_iea_22mw_damage.png" alt="FLOAT vs IEA: damage" width="400">
 </p>
 
 
