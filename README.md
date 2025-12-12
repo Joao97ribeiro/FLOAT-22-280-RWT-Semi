@@ -75,7 +75,7 @@ The following input files are modified:
 
 - **FLOAT-22-280-RWT-Semi_ElastoDyn_tower.dat**: Updated tower properties (TMassDen, TwFAStif, TwSSStif) while retaining the original mode shapes.
 - **FLOAT-22-280-RWT-Semi_ElastoDyn.dat**: Updated platform mass (PtfmMass) and adjusted it by subtracting the additional weight introduced by the new tower.
--- **FLOAT-22-280-RWT-Semi.fst**: Updated OpenFAST primary file to reference the new tower and ElastoDyn inputs.
+- **FLOAT-22-280-RWT-Semi.fst**: Updated OpenFAST primary file to reference the new tower and ElastoDyn inputs.
 
 All remaining OpenFAST input files remain unchanged and follow the original model.
 
