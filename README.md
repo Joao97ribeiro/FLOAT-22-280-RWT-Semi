@@ -7,6 +7,12 @@
   <a href="https://arxiv.org/abs/2601.01657">
     <img src="https://img.shields.io/badge/arXiv-2601.01657-b31b1b.svg">
   </a>
+  <a href="https://joao97ribeiro.github.io/FLOAT/">
+    <img src="https://img.shields.io/badge/project-page-2c5282.svg">
+  </a>
+  <a href="https://github.com/Joao97ribeiro/FLOAT">
+    <img src="https://img.shields.io/badge/framework-FLOAT-1f6feb.svg">
+  </a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0">
     <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
