@@ -4,8 +4,8 @@
 
 # FLOAT-22-280-RWT-Semi
 <p align="center">
-  <a href="https://arxiv.org/abs/2502.02594">
-    <img src="https://img.shields.io/badge/arXiv-2502.02594-b31b1b.svg">
+  <a href="https://arxiv.org/abs/2601.01657">
+    <img src="https://img.shields.io/badge/arXiv-2601.01657-b31b1b.svg">
   </a>
   <a href="https://www.apache.org/licenses/LICENSE-2.0">
     <img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
@@ -31,10 +31,21 @@ This repository provides the first fatigue-oriented redesign of the IEA 22 MW fl
 - **Sérgio M. O. Tavares** (University of Aveiro)
 - **Faez Ahmed** (MIT) — [faez@mit.edu](mailto:faez@mit.edu)
 
+---
+
+<h3 align="center">⚠️ The FLOAT-22-280-RWT-Semi is being adopted by the official <a href="https://iea-wind.org/task55/">IEA Wind Task 55 REFWIND</a> reference turbine.</h3>
+
+<p align="center">
+  Track its integration into the <strong>IEA 22-MW offshore reference wind turbine</strong> in
+  <a href="https://github.com/IEAWindSystems/IEA-22-280-RWT/pull/164">IEAWindSystems/IEA-22-280-RWT PR #164</a>.
+</p>
+
+---
+
 
 ## FLOAT Paper 
 
-The **FLOAT-22-280-RWT-Semi** is documented in full detail in the scientific paper [**FLOAT: Fatigue-Aware Design Optimization of Wind Turbine Towers**](https://arxiv.org/abs/2502.02594), where the tower, the optimization process, and the validation are presented.
+The **FLOAT-22-280-RWT-Semi** is documented in full detail in the scientific paper [**FLOAT: Fatigue-Aware Design Optimization of Floating Offshore Wind Turbine Towers**](https://arxiv.org/abs/2601.01657), where the tower, the optimization process, and the validation are presented.
 
 <p align="center">
   <img src="./images/float_paper_abstract.png" alt="FLOAT paper abstract" width="1000">
@@ -80,9 +91,20 @@ The following input files are modified:
 All remaining OpenFAST input files remain unchanged and follow the original model.
 
 
+## Reproducing this Tower
+
+From inside the [FLOAT repository](https://github.com/Joao97ribeiro/FLOAT):
+
+```bash
+python examples/08_float_paper_workflow/run.py
+```
+
+chains the reference analysis, the two optimization passes (`opt1` → `opt2`), the comparison plots, and the OpenFAST `.dat` export — re-generating exactly the tower bundled in this repository. All input files (geometry, modeling YAMLs with the precomputed high-fidelity damage, analysis YAMLs with constraints and design variables) ship in [`examples/input_files/float_paper/`](https://github.com/Joao97ribeiro/FLOAT/tree/float-stable/examples/input_files/float_paper).
+
+
 ## Documentation
 
-The theoretical background and validation of the tower are fully presented in the [**FLOAT paper**](https://arxiv.org/abs/2502.02594).  
+The theoretical background and validation of the tower are fully presented in the [**FLOAT paper**](https://arxiv.org/abs/2601.01657). The framework itself, including the `pyfloat` Python package and the step-by-step example that reproduces this tower, lives in the [**FLOAT repository**](https://github.com/Joao97ribeiro/FLOAT) — see [`examples/08_float_paper_workflow/`](https://github.com/Joao97ribeiro/FLOAT/tree/float-stable/examples/08_float_paper_workflow) for the end-to-end runner.
 
 
 ## License
@@ -95,23 +117,26 @@ See the [LICENSE](./LICENSE) file for full details or view it online at: [Apache
 
 If you use **FLOAT-22-280-RWT-Semi** in your work, please cite:
 
-> *FLOAT: Fatigue-Aware Design Optimization of Wind Turbine Towers.*  
+> *FLOAT: Fatigue-Aware Design Optimization of Floating Offshore Wind Turbine Towers.*  
 > João Alves Ribeiro, Francisco Pimenta, Bruno Alves Ribeiro, Sérgio M. O. Tavares, Faez Ahmed.  
-> arXiv:2502.02594, 2025.  
-> https://arxiv.org/abs/2502.02594
+> arXiv:2601.01657, 2026.  
+> https://arxiv.org/abs/2601.01657
 
 <details>
 <summary>BibTeX</summary>
 
 ```bibtex
-@article{ribeiro2025float,
-  title   = {FLOAT: Fatigue-Aware Design Optimization of Wind Turbine Towers},
-  author  = {Ribeiro, Jo{\~a}o Alves and Pimenta, Francisco and Ribeiro, Bruno Alves and Tavares, S{\'e}rgio M. O. and Ahmed, Faez},
-  journal = {arXiv preprint arXiv:2502.02594},
-  year    = {2025}
+@misc{ribeiro2026floatfatigueawaredesignoptimization,
+      title={FLOAT: Fatigue-Aware Design Optimization of Floating Offshore Wind Turbine Towers}, 
+      author={João Alves Ribeiro and Francisco Pimenta and Bruno Alves Ribeiro and Sérgio M. O. Tavares and Faez Ahmed},
+      year={2026},
+      eprint={2601.01657},
+      archivePrefix={arXiv},
+      primaryClass={cs.CE},
+      url={https://arxiv.org/abs/2601.01657}, 
 }
 ```
-</details> 
+</details>
 
 
 ## Maintenance & Support
